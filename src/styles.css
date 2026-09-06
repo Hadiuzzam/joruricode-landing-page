@@ -2721,3 +2721,207 @@ html[lang="bn"]
 }
 
 /* JORURICODE_PREMIUM_TOAST_END */
+
+
+/* JORURICODE_MOBILE_APP_FIX_START */
+
+@media (max-width: 640px) {
+
+  /* Whole app section */
+  .app-section {
+    width: calc(100% - 28px) !important;
+    min-height: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    gap: 0 !important;
+    padding: 0 !important;
+
+    overflow: hidden !important;
+
+    background: #081323 !important;
+  }
+
+
+  /* Text/content side */
+  .app-section .app-copy {
+    width: 100% !important;
+    max-width: none !important;
+
+    padding: 38px 20px 32px !important;
+
+    text-align: center;
+  }
+
+
+  .app-section .app-pill {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .app-section .app-copy h2 {
+    margin-top: 24px !important;
+
+    font-size: 32px !important;
+    line-height: 1.15 !important;
+  }
+
+
+  .app-section .app-copy p {
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+
+  /* Feature pills */
+  .app-section .app-features {
+    justify-content: center !important;
+
+    gap: 9px !important;
+
+    margin-top: 24px !important;
+  }
+
+
+  .app-section .app-features span {
+    min-height: 38px !important;
+
+    padding: 0 12px !important;
+
+    font-size: 13px !important;
+  }
+
+
+  /* App store buttons */
+  .app-section .store-buttons {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+
+    margin-top: 26px !important;
+  }
+
+
+  .app-section
+  .store-buttons
+  .store-image-button {
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    flex: 0 1 auto !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+    border: 0 !important;
+
+    box-shadow: none !important;
+  }
+
+
+  .app-section
+  .store-buttons
+  .store-image-button img {
+    width: auto !important;
+    height: 43px !important;
+
+    max-width: 100% !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+  }
+
+
+  /* Blue phone area */
+  .app-section .app-image-visual {
+    width: 100% !important;
+
+    min-height: 350px !important;
+    height: auto !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 24px 18px 28px !important;
+
+    overflow: hidden !important;
+
+    background:
+      linear-gradient(
+        145deg,
+        #1748bd 0%,
+        #1a56db 58%,
+        #2468f1 100%
+      ) !important;
+  }
+
+
+  /* Phone image */
+  .app-section .app-phones-image {
+    width: auto !important;
+    height: auto !important;
+
+    max-width: 92% !important;
+    max-height: 320px !important;
+
+    margin: 0 auto !important;
+
+    display: block !important;
+
+    object-fit: contain !important;
+
+    transform: translateX(4px) !important;
+
+    filter:
+      drop-shadow(
+        0 24px 32px
+        rgba(0, 0, 0, 0.28)
+      ) !important;
+  }
+}
+
+
+/* Very small phones */
+@media (max-width: 380px) {
+
+  .app-section .app-copy {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+
+  .app-section
+  .store-buttons
+  .store-image-button img {
+    height: 38px !important;
+  }
+
+
+  .app-section .app-image-visual {
+    min-height: 320px !important;
+
+    padding:
+      20px 14px
+      24px !important;
+  }
+
+
+  .app-section .app-phones-image {
+    max-height: 290px !important;
+  }
+}
+
+/* JORURICODE_MOBILE_APP_FIX_END */

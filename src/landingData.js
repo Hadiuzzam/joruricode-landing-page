@@ -44,6 +44,81 @@ export const processSteps = [
   },
 ];
 
+
+
+export const reviews = [
+  {
+    name: "Rahim Ahmed",
+    role: {
+      en: "Motorbike Rider",
+      bn: "মোটরবাইক রাইডার",
+    },
+    review: {
+      en: "The emergency QR idea is very useful. In an accident, having important information and family contacts available quickly can make a real difference.",
+      bn: "জরুরি QR ধারণাটি খুবই উপকারী। দুর্ঘটনার সময় প্রয়োজনীয় তথ্য ও পরিবারের যোগাযোগ দ্রুত পাওয়া গেলে অনেক বড় সুবিধা হতে পারে।",
+    },
+    rating: 5,
+    initials: "RA",
+
+  },
+  {
+    name: "Nusrat Jahan",
+    role: {
+      en: "Parent",
+      bn: "অভিভাবক",
+    },
+    review: {
+      en: "I like the family safety concept. It feels reassuring to know that emergency information can be accessed quickly when it is needed most.",
+      bn: "ফ্যামিলি সেফটি ধারণাটি আমার খুব ভালো লেগেছে। জরুরি সময়ে প্রয়োজনীয় তথ্য দ্রুত পাওয়া যাবে—এটি সত্যিই স্বস্তিদায়ক।",
+    },
+    rating: 5,
+    initials: "NJ",
+
+  },
+  {
+    name: "Tanvir Hasan",
+    role: {
+      en: "Daily Commuter",
+      bn: "নিয়মিত যাত্রী",
+    },
+    review: {
+      en: "The platform looks simple and practical. QR-based emergency access and instant family connection could be especially helpful for riders and travellers.",
+      bn: "প্ল্যাটফর্মটি সহজ এবং ব্যবহারিক মনে হয়েছে। QR-এর মাধ্যমে জরুরি তথ্য ও পরিবারের সাথে দ্রুত যোগাযোগ বিশেষ করে রাইডার ও যাত্রীদের জন্য খুব কার্যকর হতে পারে।",
+    },
+    rating: 5,
+    initials: "TH",
+
+  },
+  {
+    name: "Sadia Islam",
+    role: {
+      en: "University Student",
+      bn: "বিশ্ববিদ্যালয় শিক্ষার্থী",
+    },
+    review: {
+      en: "A personal emergency QR profile is a smart idea. It could help someone identify me and contact my family quickly if something unexpected happens.",
+      bn: "ব্যক্তিগত জরুরি QR প্রোফাইল একটি দারুণ ধারণা। কোনো অনাকাঙ্ক্ষিত ঘটনা ঘটলে এটি দ্রুত পরিচয় শনাক্ত করতে এবং পরিবারের সাথে যোগাযোগ করতে সহায়তা করতে পারে।",
+    },
+    rating: 5,
+    initials: "SI",
+
+  },
+  {
+    name: "Mehedi Hasan",
+    role: {
+      en: "Family Member",
+      bn: "পরিবারের সদস্য",
+    },
+    review: {
+      en: "JoruriCode brings emergency information and family connection together in one simple place. The concept feels useful for everyday safety.",
+      bn: "JoruriCode জরুরি তথ্য এবং পরিবারের সংযোগকে একটি সহজ জায়গায় নিয়ে এসেছে। দৈনন্দিন নিরাপত্তার জন্য ধারণাটি বেশ কার্যকর মনে হয়েছে।",
+    },
+    rating: 5,
+    initials: "MH",
+
+  },
+];
+
 export const plans = [
   {
     name: { en: "FREE PLAN", bn: "ফ্রি প্ল্যান" },

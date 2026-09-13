@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
+  ArrowRight,
   BellRing,
   Calendar,
   CheckCircle2,
@@ -23,6 +24,7 @@ import {
   Users,
   X,
   Youtube,
+  Zap,
   Instagram,
 } from "lucide-react";
 import { push, ref, serverTimestamp } from "firebase/database";
@@ -31,6 +33,7 @@ import {
   awarenessVideos,
   plans,
   processSteps,
+  reviews,
   safetyTips,
   stats,
 } from "./landingData.js";
@@ -50,6 +53,7 @@ const copy = {
     heroText:
       "Register once. Stick a QR code on your helmet. In an emergency, anyone can scan and instantly alert your family with your GPS location.",
     howItWorks: "How It Works",
+    registerFree: "Register Free",
     processKicker: "SIMPLE PROCESS",
     processTitle: "How JoruriCode Works",
     pricingKicker: "PRICING",
@@ -99,6 +103,7 @@ const copy = {
     closingTitle: "Don't Wait for an Emergency",
     closingText:
       "Register today and keep your loved ones connected. It takes less than 3 minutes.",
+    closingCta: "Register Free",
     footerLine: "Emergency QR Identity & Family Safety Platform",
     footerText:
       "Protect yourself and your loved ones with emergency QR profiles, instant emergency alerts, family connections, and critical information access when it matters most.",
@@ -121,6 +126,7 @@ const copy = {
     heroText:
       "একবার রেজিস্টার করুন। হেলমেটে কিউআর কোড লাগিয়ে রাখুন। জরুরি সময়ে যে কেউ স্ক্যান করে আপনার পরিবারকে জিপিএস লোকেশনসহ জানাতে পারবে।",
     howItWorks: "কীভাবে কাজ করে",
+    registerFree: "ফ্রি রেজিস্টার করুন",
     processKicker: "সহজ প্রক্রিয়া",
     processTitle: "JoruriCode কীভাবে কাজ করে",
     pricingKicker: "প্রাইসিং",
@@ -170,6 +176,7 @@ const copy = {
     closingTitle: "জরুরি সময়ের জন্য অপেক্ষা করবেন না",
     closingText:
       "আজই রেজিস্টার করুন এবং প্রিয়জনদের সাথে নিরাপত্তার সংযোগ রাখুন। সময় লাগে ৩ মিনিটেরও কম।",
+    closingCta: "ফ্রি রেজিস্টার করুন",
     footerLine: "জরুরি কিউআর আইডেন্টিটি ও ফ্যামিলি সেফটি প্ল্যাটফর্ম",
     footerText:
       "জরুরি কিউআর প্রোফাইল, দ্রুত অ্যালার্ট, পারিবারিক সংযোগ ও প্রয়োজনীয় তথ্যের মাধ্যমে নিজেকে ও প্রিয়জনদের সুরক্ষিত রাখুন।",
@@ -333,9 +340,16 @@ function Hero({ t }) {
           <span>{t.heroB}</span>
         </h1>
         <p>{t.heroText}</p>
-        <a className="ghost-cta" href="#how-it-works">
-          {t.howItWorks}
-        </a>
+        <div className="hero-actions">
+          <a className="register-free-cta" href="#app">
+            <span>{t.registerFree}</span>
+            <ArrowRight size={17} />
+          </a>
+
+          <a className="ghost-cta" href="#how-it-works">
+            {t.howItWorks}
+          </a>
+        </div>
       </div>
     </section>
   );
@@ -503,7 +517,7 @@ function StatsBand({ lang }) {
 }
 
 function Process({ lang, t }) {
-  const icons = [User, Users, CreditCard, Lock];
+  const icons = [Phone, Shield, QrCode, Zap];
 
   return (
     <section id="how-it-works" className="section process-section">
@@ -527,6 +541,230 @@ function Process({ lang, t }) {
             );
           })}
         </div>
+      </div>
+    </section>
+  );
+}
+
+
+
+function Reviews({ lang }) {
+  const [activeReview, setActiveReview] = useState(0);
+  const [reviewPaused, setReviewPaused] = useState(false);
+
+  const reviewCount = reviews.length;
+
+  const normalizeReviewIndex = (index) => {
+    return (index + reviewCount) % reviewCount;
+  };
+
+  const getReviewPosition = (index) => {
+    let difference = index - activeReview;
+
+    if (difference > reviewCount / 2) {
+      difference -= reviewCount;
+    }
+
+    if (difference < -reviewCount / 2) {
+      difference += reviewCount;
+    }
+
+    return difference;
+  };
+
+  const previousReview = () => {
+    setActiveReview((current) =>
+      normalizeReviewIndex(current - 1)
+    );
+  };
+
+  const nextReview = () => {
+    setActiveReview((current) =>
+      normalizeReviewIndex(current + 1)
+    );
+  };
+
+  useEffect(() => {
+    if (reviewPaused || reviewCount <= 1) {
+      return undefined;
+    }
+
+    const timer = window.setInterval(() => {
+      setActiveReview((current) =>
+        normalizeReviewIndex(current + 1)
+      );
+    }, 3000);
+
+    return () => {
+      window.clearInterval(timer);
+    };
+  }, [reviewPaused, reviewCount]);
+
+  return (
+    <section
+      className="section reviews-section reviews-carousel-section"
+      onMouseEnter={() => setReviewPaused(true)}
+      onMouseLeave={() => setReviewPaused(false)}
+    >
+      <div className="container">
+
+        <div
+          className="section-heading"
+          data-reveal="text"
+        >
+          <span className="section-kicker">
+            {lang === "bn"
+              ? "ব্যবহারকারীদের মতামত"
+              : "USER REVIEWS"}
+          </span>
+
+          <h2>
+            {lang === "bn"
+              ? "মানুষ কী বলছে"
+              : "What People Are Saying"}
+          </h2>
+
+          <p className="reviews-intro">
+            {lang === "bn"
+              ? "নিচের মতামতগুলো আপাতত ডেমো হিসেবে ব্যবহার করা হয়েছে।"
+              : "The reviews below are currently sample/demo testimonials."}
+          </p>
+        </div>
+
+
+        <div
+          className="reviews-carousel"
+          data-reveal="visual"
+        >
+
+          <button
+            type="button"
+            className="reviews-carousel-arrow reviews-carousel-arrow-left"
+            onClick={previousReview}
+            aria-label="Previous review"
+          >
+            ‹
+          </button>
+
+
+          <div className="reviews-carousel-stage">
+
+            {reviews.map((item, index) => {
+              const position =
+                getReviewPosition(index);
+
+              const limitedPosition =
+                Math.max(
+                  -2,
+                  Math.min(2, position)
+                );
+
+              return (
+                <article
+                  key={item.name}
+                  className={
+                    `review-card carousel-review-card review-position-${limitedPosition} ${position === 0 ? "is-active-review" : ""}`
+                  }
+                  onClick={() =>
+                    setActiveReview(index)
+                  }
+                  aria-hidden={
+                    Math.abs(position) > 2
+                  }
+                >
+
+                  <div className="review-top">
+
+                    <div className="review-avatar">
+                      {item.initials}
+                    </div>
+
+                    <div className="review-user">
+                      <strong>
+                        {item.name}
+                      </strong>
+
+                      <span>
+                        {text(item.role, lang)}
+                      </span>
+                    </div>
+
+                    
+
+                  </div>
+
+
+                  <div
+                    className="review-stars"
+                    aria-label={
+                      `${item.rating} out of 5 stars`
+                    }
+                  >
+                    {Array.from({
+                      length: 5,
+                    }).map(
+                      (_, starIndex) => (
+                        <span
+                          key={starIndex}
+                          className={
+                            starIndex <
+                            item.rating
+                              ? "review-star active"
+                              : "review-star"
+                          }
+                        >
+                          ★
+                        </span>
+                      )
+                    )}
+                  </div>
+
+
+                  <p className="review-copy">
+                    “{text(item.review, lang)}”
+                  </p>
+
+                </article>
+              );
+            })}
+
+          </div>
+
+
+          <button
+            type="button"
+            className="reviews-carousel-arrow reviews-carousel-arrow-right"
+            onClick={nextReview}
+            aria-label="Next review"
+          >
+            ›
+          </button>
+
+        </div>
+
+
+        <div className="reviews-carousel-dots">
+
+          {reviews.map((item, index) => (
+            <button
+              type="button"
+              key={item.name}
+              className={
+                index === activeReview
+                  ? "review-dot is-active"
+                  : "review-dot"
+              }
+              onClick={() =>
+                setActiveReview(index)
+              }
+              aria-label={
+                `Show review ${index + 1}`
+              }
+            />
+          ))}
+
+        </div>
+
       </div>
     </section>
   );
@@ -1000,7 +1238,21 @@ function EmergencyClose({ t }) {
     <section className="closing-section">
       <div className="container closing-copy" data-reveal="text">
         <h2>{t.closingTitle}</h2>
+
         <p>{t.closingText}</p>
+
+        <a
+          className="closing-register-cta"
+          href="#app"
+        >
+          <span>{t.closingCta || "Register Free"}</span>
+          <span
+            className="closing-register-arrow"
+            aria-hidden="true"
+          >
+            →
+          </span>
+        </a>
       </div>
     </section>
   );
@@ -1044,15 +1296,6 @@ function Footer({ t }) {
         <div data-reveal="visual" data-reveal-delay="260">
           <h4>{t.updated}</h4>
           <p>{t.updatedText}</p>
-          <form className="subscribe-form" onSubmit={(event) => event.preventDefault()}>
-            <label className="sr-only" htmlFor="email">
-              {t.email}
-            </label>
-            <Mail size={18} />
-            <input id="email" type="email" placeholder={t.email} />
-            <button type="submit">{t.subscribe}</button>
-          </form>
-          {!hasFirebaseConfig && <span className="firebase-note">{t.firebaseReady}</span>}
         </div>
       </div>
       <div className="copyright">{t.copyright}</div>
@@ -1078,6 +1321,7 @@ export default function App() {
         <Hero t={t} />
         <StatsBand lang={lang} />
         <Process lang={lang} t={t} />
+        <Reviews lang={lang} />
         <Pricing lang={lang} t={t} />
         <Awareness lang={lang} t={t} />
         <AppPromo t={t} />

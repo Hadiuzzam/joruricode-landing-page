@@ -2925,3 +2925,2062 @@ html[lang="bn"]
 }
 
 /* JORURICODE_MOBILE_APP_FIX_END */
+
+
+/* JORURICODE_REGISTER_FREE_CTA */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.register-free-cta {
+  min-height: 58px;
+  padding: 0 28px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  border-radius: 12px;
+
+  color: #071225;
+  background: var(--yellow);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  font-weight: 850;
+
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(255, 213, 35, 0.08);
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    background 220ms ease;
+}
+
+.register-free-cta:hover {
+  transform: translateY(-3px);
+
+  background: #ffe04d;
+
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.24);
+}
+
+.register-free-cta:active {
+  transform: translateY(0);
+}
+
+.hero-actions .ghost-cta {
+  margin: 0;
+}
+
+html[lang="bn"] .register-free-cta {
+  font-family:
+    "Noto Sans Bengali",
+    "Nirmala UI",
+    sans-serif;
+}
+
+@media (max-width: 640px) {
+  .hero-actions {
+    gap: 10px;
+  }
+
+  .register-free-cta,
+  .hero-actions .ghost-cta {
+    min-height: 52px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+
+/* JORURICODE_REGISTER_FREE_WHITE_START */
+
+.register-free-cta {
+  min-height: 58px !important;
+  padding: 0 28px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+
+  border-radius: 12px !important;
+
+  color: #1554d1 !important;
+  background: #ffffff !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+
+  font-weight: 850 !important;
+
+  box-shadow:
+    0 14px 30px rgba(0, 0, 0, 0.16),
+    0 0 0 1px rgba(255, 255, 255, 0.10) !important;
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    background 220ms ease !important;
+}
+
+.register-free-cta:hover {
+  color: #0f45b8 !important;
+  background: #f8fbff !important;
+
+  transform: translateY(-3px) !important;
+
+  box-shadow:
+    0 18px 36px rgba(0, 0, 0, 0.22) !important;
+}
+
+.register-free-cta:active {
+  transform: translateY(0) !important;
+}
+
+.register-free-cta svg {
+  stroke-width: 2.2 !important;
+}
+
+@media (max-width: 640px) {
+  .register-free-cta {
+    min-height: 52px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
+
+/* JORURICODE_REGISTER_FREE_WHITE_END */
+
+
+/* JORURICODE_BASE44_HERO_STYLE_START */
+
+/* =========================================
+   HERO TYPOGRAPHY
+   Softer / cleaner weight like original
+========================================= */
+
+.hero h1 {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+}
+
+.hero h1 span {
+  font-weight: 800 !important;
+}
+
+.hero p {
+  font-weight: 400 !important;
+}
+
+.hero-pill,
+.hero .eyebrow {
+  font-weight: 500 !important;
+}
+
+
+/* =========================================
+   REGISTER FREE
+   Original white button appearance
+========================================= */
+
+.register-free-cta {
+  min-width: 184px !important;
+  min-height: 58px !important;
+
+  padding: 0 25px 0 28px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 11px !important;
+
+  border: 0 !important;
+  border-radius: 12px !important;
+
+  color: #1554d1 !important;
+  background: #ffffff !important;
+
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1 !important;
+
+  box-shadow:
+    0 8px 20px rgba(12, 42, 95, 0.10) !important;
+
+  transform: none !important;
+
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background 180ms ease !important;
+}
+
+.register-free-cta span {
+  font-weight: 700 !important;
+}
+
+.register-free-cta svg {
+  width: 17px !important;
+  height: 17px !important;
+
+  flex: 0 0 auto !important;
+
+  stroke-width: 2 !important;
+
+  transition: transform 180ms ease !important;
+}
+
+.register-free-cta:hover {
+  color: #1554d1 !important;
+  background: #ffffff !important;
+
+  transform: translateY(-2px) !important;
+
+  box-shadow:
+    0 12px 26px rgba(12, 42, 95, 0.16) !important;
+}
+
+.register-free-cta:hover svg {
+  transform: translateX(3px);
+}
+
+.register-free-cta:active {
+  transform: translateY(0) !important;
+}
+
+
+/* =========================================
+   HOW IT WORKS
+   Match same cleaner text weight
+========================================= */
+
+.hero-actions .ghost-cta {
+  min-width: 164px !important;
+  min-height: 58px !important;
+
+  font-size: 16px !important;
+  font-weight: 600 !important;
+
+  border-radius: 12px !important;
+}
+
+
+/* =========================================
+   NAVBAR TYPOGRAPHY
+========================================= */
+
+.site-header .nav-links {
+  font-weight: 600 !important;
+}
+
+.site-header .header-app-button {
+  font-weight: 700 !important;
+}
+
+.site-header .language-toggle {
+  font-weight: 700 !important;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.stat-item strong {
+  font-weight: 800 !important;
+}
+
+.stat-item span {
+  font-weight: 400 !important;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+  .hero h1 {
+    font-weight: 800 !important;
+  }
+
+  .register-free-cta,
+  .hero-actions .ghost-cta {
+    min-width: 0 !important;
+    min-height: 52px !important;
+
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+
+    font-size: 14px !important;
+  }
+}
+
+/* JORURICODE_BASE44_HERO_STYLE_END */
+
+
+/* JORURICODE_REVIEWS_START */
+
+.reviews-section {
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f8fafc 100%
+    );
+}
+
+.reviews-section .section-heading {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.reviews-intro {
+  max-width: 620px;
+  margin: 14px auto 0;
+
+  color: #64748b;
+
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.reviews-grid {
+  margin-top: 48px;
+
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 24px;
+}
+
+.review-card {
+  min-height: 310px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 28px;
+
+  position: relative;
+  overflow: hidden;
+
+  border:
+    1px solid rgba(15, 23, 42, 0.08);
+
+  border-radius: 18px;
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  box-shadow:
+    0 16px 42px rgba(15, 23, 42, 0.07);
+
+  transition:
+    transform 260ms ease,
+    box-shadow 260ms ease,
+    border-color 260ms ease;
+}
+
+.review-card::before {
+  content: "“";
+
+  position: absolute;
+
+  top: -10px;
+  right: 18px;
+
+  color:
+    rgba(26, 86, 219, 0.06);
+
+  font-family: Georgia, serif;
+  font-size: 130px;
+  line-height: 1;
+
+  pointer-events: none;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+
+  border-color:
+    rgba(26, 86, 219, 0.16);
+
+  box-shadow:
+    0 24px 58px rgba(15, 23, 42, 0.11);
+}
+
+.review-top {
+  display: grid;
+  grid-template-columns:
+    48px minmax(0, 1fr) auto;
+
+  gap: 13px;
+
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 14px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      145deg,
+      #3478f6,
+      #1554d1
+    );
+
+  font-size: 14px;
+  font-weight: 800;
+
+  box-shadow:
+    0 10px 24px rgba(26, 86, 219, 0.18);
+}
+
+.review-user {
+  min-width: 0;
+}
+
+.review-user strong {
+  display: block;
+
+  color: #0f172a;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.review-user span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+.review-stars {
+  margin-top: 24px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 3px;
+}
+
+.review-star {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+.review-star.active {
+  color: #fbbf24;
+}
+
+.review-copy {
+  margin: 18px 0 0;
+
+  position: relative;
+  z-index: 1;
+
+  color: #475569;
+
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+
+/* Bangla */
+
+html[lang="bn"] .review-copy,
+html[lang="bn"] .review-user,
+html[lang="bn"] .reviews-intro,
+html[lang="bn"] /* Tablet */
+
+@media (max-width: 980px) {
+  .reviews-grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .review-card:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .reviews-grid {
+    margin-top: 34px;
+
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .review-card,
+  .review-card:last-child {
+    grid-column: auto;
+
+    min-height: 0;
+
+    padding: 22px;
+  }
+
+  .review-top {
+    grid-template-columns:
+      44px minmax(0, 1fr) auto;
+
+    gap: 11px;
+  }
+
+  .review-avatar {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 12px;
+  }
+
+  .review-copy {
+    font-size: 14px;
+    line-height: 1.75;
+  }
+}
+
+/* JORURICODE_REVIEWS_END */
+
+
+/* JORURICODE_OLD_PROCESS_EXACT_START */
+
+/* =========================================
+   PREVIOUS JORURICODE SIMPLE PROCESS
+========================================= */
+
+.process-section {
+  padding: 76px 0 72px !important;
+
+  background: #ffffff !important;
+}
+
+
+/* -----------------------------------------
+   HEADING
+----------------------------------------- */
+
+.process-section .section-heading {
+  margin: 0 0 52px !important;
+
+  text-align: center !important;
+}
+
+
+.process-section .section-kicker {
+  display: inline-block !important;
+
+  margin: 0 0 13px !important;
+
+  color: #155eef !important;
+
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+
+  letter-spacing: 0.035em !important;
+}
+
+
+.process-section .section-heading h2 {
+  margin: 0 !important;
+
+  color: #081426 !important;
+
+  font-size: 34px !important;
+  font-weight: 700 !important;
+  line-height: 1.18 !important;
+
+  letter-spacing: -0.025em !important;
+}
+
+
+/* -----------------------------------------
+   GRID
+   Previous layout was noticeably narrower
+----------------------------------------- */
+
+.process-section .process-grid {
+  width: min(1000px, 100%) !important;
+
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  display: grid !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr)) !important;
+
+  gap: 24px !important;
+}
+
+
+/* -----------------------------------------
+   CARD
+----------------------------------------- */
+
+.process-section .process-card {
+  position: relative !important;
+
+  min-height: 226px !important;
+
+  padding:
+    0
+    22px
+    26px !important;
+
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+
+  text-align: center !important;
+
+  overflow: hidden !important;
+
+  border:
+    1px solid #e7ebf0 !important;
+
+  border-radius: 14px !important;
+
+  background: #ffffff !important;
+
+  box-shadow:
+    0 5px 16px
+    rgba(15, 23, 42, 0.025) !important;
+
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease !important;
+}
+
+
+.process-section .process-card:hover {
+  transform: translateY(-3px) !important;
+
+  border-color:
+    #dce5f2 !important;
+
+  box-shadow:
+    0 10px 24px
+    rgba(15, 23, 42, 0.055) !important;
+}
+
+
+/* -----------------------------------------
+   BIG STEP NUMBER
+   centered behind icon
+----------------------------------------- */
+
+.process-section .step-number {
+  position: absolute !important;
+
+  top: 25px !important;
+  left: 50% !important;
+  right: auto !important;
+
+  z-index: 0 !important;
+
+  transform:
+    translateX(-50%) !important;
+
+  color: #dce8fa !important;
+
+  font-size: 46px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+
+  letter-spacing: -0.04em !important;
+
+  pointer-events: none !important;
+}
+
+
+/* -----------------------------------------
+   BLUE ICON
+   overlaps step number like previous site
+----------------------------------------- */
+
+.process-section .step-icon {
+  position: relative !important;
+
+  z-index: 2 !important;
+
+  width: 44px !important;
+  height: 44px !important;
+
+  flex: 0 0 44px !important;
+
+  margin:
+    52px
+    0
+    19px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  color: #ffffff !important;
+
+  border: 0 !important;
+  border-radius: 10px !important;
+
+  background:
+    #2563eb !important;
+
+  box-shadow:
+    none !important;
+}
+
+
+.process-section .step-icon svg {
+  width: 22px !important;
+  height: 22px !important;
+
+  stroke: currentColor !important;
+  stroke-width: 2 !important;
+}
+
+
+/* -----------------------------------------
+   TITLE
+----------------------------------------- */
+
+.process-section .process-card h3 {
+  width: 100% !important;
+
+  margin:
+    0
+    0
+    10px !important;
+
+  color: #071225 !important;
+
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+
+  text-align: center !important;
+
+  letter-spacing: -0.01em !important;
+}
+
+
+/* -----------------------------------------
+   DESCRIPTION
+----------------------------------------- */
+
+.process-section .process-card p {
+  width: 100% !important;
+  max-width: 205px !important;
+
+  margin:
+    0
+    auto !important;
+
+  color: #64748b !important;
+
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 1.55 !important;
+
+  text-align: center !important;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 980px) {
+
+  .process-section {
+    padding:
+      68px 0
+      66px !important;
+  }
+
+  .process-section .process-grid {
+    width: min(720px, 100%) !important;
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 20px !important;
+  }
+
+  .process-section .process-card {
+    min-height: 220px !important;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+  .process-section {
+    padding:
+      58px 0
+      58px !important;
+  }
+
+  .process-section .section-heading {
+    margin-bottom:
+      36px !important;
+  }
+
+  .process-section .section-kicker {
+    margin-bottom:
+      10px !important;
+
+    font-size:
+      12px !important;
+  }
+
+  .process-section .section-heading h2 {
+    font-size:
+      28px !important;
+  }
+
+  .process-section .process-grid {
+    width: 100% !important;
+
+    grid-template-columns:
+      1fr !important;
+
+    gap: 14px !important;
+  }
+
+  .process-section .process-card {
+    min-height:
+      218px !important;
+
+    padding-left:
+      20px !important;
+
+    padding-right:
+      20px !important;
+  }
+}
+
+
+/* =========================================
+   BANGLA
+========================================= */
+
+html[lang="bn"]
+.process-section .process-card h3,
+
+html[lang="bn"]
+.process-section .process-card p,
+
+html[lang="bn"]
+.process-section .section-kicker {
+
+  font-family:
+    "Noto Sans Bengali",
+    "Nirmala UI",
+    sans-serif !important;
+}
+
+/* JORURICODE_OLD_PROCESS_EXACT_END */
+
+
+/* JORURICODE_PREMIUM_HOVER_START */
+
+/* ============================================================
+   JORURICODE PREMIUM HOVER / HOVER-OUT MICRO INTERACTIONS
+   Subtle, calm, premium — no aggressive zoom/bounce
+============================================================ */
+
+
+/* ------------------------------------------------------------
+   COMMON TRANSITION
+------------------------------------------------------------ */
+
+.process-card,
+.pricing-card,
+.news-card,
+.video-card,
+.safety-card,
+.review-card,
+.contact-map-card,
+.app-image-visual,
+.store-image-button,
+.register-free-cta,
+.ghost-cta,
+.header-app-button,
+.language-toggle,
+.menu-toggle,
+.contact-form button,
+.contact-info > a,
+.footer a,
+.nav-links a {
+  transition:
+    scale 320ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 320ms cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 320ms ease,
+    background-color 320ms ease,
+    color 320ms ease,
+    filter 320ms ease,
+    opacity 320ms ease !important;
+}
+
+
+/* ============================================================
+   DESKTOP / MOUSE DEVICES ONLY
+============================================================ */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* ----------------------------------------------------------
+     PRIMARY / SECONDARY BUTTONS
+  ---------------------------------------------------------- */
+
+  .register-free-cta:hover,
+  .ghost-cta:hover,
+  .header-app-button:hover,
+  .contact-form button:hover {
+    scale: 1.035;
+
+    box-shadow:
+      0 14px 32px rgba(7, 18, 37, 0.18) !important;
+  }
+
+
+  .register-free-cta:active,
+  .ghost-cta:active,
+  .header-app-button:active,
+  .contact-form button:active {
+    scale: 0.985;
+
+    transition-duration: 120ms !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     SMALL HEADER BUTTONS
+  ---------------------------------------------------------- */
+
+  .language-toggle:hover,
+  .menu-toggle:hover {
+    scale: 1.045;
+
+    background-color:
+      rgba(255, 255, 255, 0.14) !important;
+
+    border-color:
+      rgba(255, 255, 255, 0.28) !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     ALL MAJOR CARDS
+  ---------------------------------------------------------- */
+
+  .process-card:hover,
+  .pricing-card:hover,
+  .news-card:hover,
+  .video-card:hover,
+  .safety-card:hover,
+  .review-card:hover,
+  .contact-map-card:hover {
+    scale: 1.018;
+
+    border-color:
+      rgba(37, 99, 235, 0.18) !important;
+
+    box-shadow:
+      0 20px 44px rgba(15, 23, 42, 0.10) !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     PROCESS CARD ICON
+  ---------------------------------------------------------- */
+
+  .process-card:hover .step-icon {
+    scale: 1.08;
+
+    box-shadow:
+      0 8px 20px rgba(37, 99, 235, 0.22) !important;
+  }
+
+
+  .process-card .step-icon {
+    transition:
+      scale 320ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 320ms ease !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     PRICING CARD
+  ---------------------------------------------------------- */
+
+  .pricing-card:hover {
+    scale: 1.02;
+  }
+
+
+  .pricing-card:hover .price,
+  .pricing-card:hover .plan-price {
+    scale: 1.025;
+  }
+
+
+  .price,
+  .plan-price {
+    transition:
+      scale 320ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     NEWS / VIDEO IMAGES
+  ---------------------------------------------------------- */
+
+  .news-card:hover .news-thumb img,
+  .video-card:hover img {
+    scale: 1.035;
+
+    filter:
+      saturate(1.04)
+      contrast(1.015);
+  }
+
+
+  .news-thumb img,
+  .video-card img {
+    transition:
+      scale 700ms cubic-bezier(0.16, 1, 0.3, 1),
+      filter 500ms ease !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     REVIEWS
+  ---------------------------------------------------------- */
+
+  .review-card:hover .review-avatar {
+    scale: 1.075;
+
+    box-shadow:
+      0 12px 26px rgba(26, 86, 219, 0.24) !important;
+  }
+
+
+  .review-avatar {
+    transition:
+      scale 320ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 320ms ease !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     STORE BUTTONS
+  ---------------------------------------------------------- */
+
+  .store-image-button:hover {
+    scale: 1.045;
+
+    filter:
+      brightness(1.04);
+  }
+
+
+  .store-image-button:active {
+    scale: 0.985;
+  }
+
+
+  /* ----------------------------------------------------------
+     CONTACT LINKS
+  ---------------------------------------------------------- */
+
+  .contact-info > a:hover {
+    scale: 1.015;
+
+    opacity: 1 !important;
+  }
+
+
+  .contact-info > a:hover svg {
+    transform:
+      translateX(3px)
+      scale(1.06);
+  }
+
+
+  .contact-info > a svg {
+    transition:
+      transform 320ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     NAV LINKS
+  ---------------------------------------------------------- */
+
+  .nav-links a:hover {
+    opacity: 1;
+  }
+
+
+  /* ----------------------------------------------------------
+     FOOTER LINKS
+  ---------------------------------------------------------- */
+
+  .footer a:hover {
+    color: #ffffff !important;
+
+    opacity: 1 !important;
+  }
+
+
+  /* ----------------------------------------------------------
+     APP VISUAL
+  ---------------------------------------------------------- */
+
+  .app-image-visual:hover .app-phones-image {
+    scale: 1.025;
+  }
+
+
+  .app-phones-image {
+    transition:
+      scale 650ms cubic-bezier(0.16, 1, 0.3, 1),
+      filter 500ms ease !important;
+  }
+
+}
+
+
+/* ============================================================
+   FOCUS — KEYBOARD ACCESSIBILITY
+============================================================ */
+
+.register-free-cta:focus-visible,
+.ghost-cta:focus-visible,
+.header-app-button:focus-visible,
+.language-toggle:focus-visible,
+.menu-toggle:focus-visible,
+.contact-form button:focus-visible,
+.store-image-button:focus-visible {
+  outline:
+    3px solid rgba(59, 130, 246, 0.32) !important;
+
+  outline-offset: 4px !important;
+}
+
+
+/* ============================================================
+   REDUCED MOTION
+============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .process-card,
+  .pricing-card,
+  .news-card,
+  .video-card,
+  .safety-card,
+  .review-card,
+  .contact-map-card,
+  .store-image-button,
+  .register-free-cta,
+  .ghost-cta,
+  .header-app-button,
+  .language-toggle,
+  .menu-toggle,
+  .contact-form button,
+  .contact-info > a,
+  .app-phones-image,
+  .review-avatar,
+  .step-icon {
+    transition: none !important;
+  }
+
+}
+
+
+/* ============================================================
+   TOUCH DEVICES
+   Prevent sticky hover behaviour on phones/tablets
+============================================================ */
+
+@media (hover: none) {
+
+  .process-card,
+  .pricing-card,
+  .news-card,
+  .video-card,
+  .safety-card,
+  .review-card,
+  .contact-map-card,
+  .store-image-button {
+    scale: 1 !important;
+  }
+
+}
+
+/* JORURICODE_PREMIUM_HOVER_END */
+
+
+/* JORURICODE_PRICING_SAFETY_HOVER_FIX_START */
+
+/* ============================================================
+   PRICING + SAFETY SPECIFIC HOVER FIX
+============================================================ */
+
+@media (hover: hover) and (pointer: fine) {
+
+  /* ---------------------------
+     PRICING
+  --------------------------- */
+
+  .pricing-section .pricing-card,
+  .pricing-section .plan-card,
+  .pricing-grid .pricing-card,
+  .pricing-grid .plan-card,
+  .plans-grid .pricing-card,
+  .plans-grid .plan-card,
+  .pricing-section .card,
+  .pricing-grid .card,
+  .plans-grid .card {
+    transition:
+      transform 340ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 340ms cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 340ms ease,
+      background-color 340ms ease,
+      scale 340ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .pricing-section .pricing-card:hover,
+  .pricing-section .plan-card:hover,
+  .pricing-grid .pricing-card:hover,
+  .pricing-grid .plan-card:hover,
+  .plans-grid .pricing-card:hover,
+  .plans-grid .plan-card:hover,
+  .pricing-section .card:hover,
+  .pricing-grid .card:hover,
+  .plans-grid .card:hover {
+    transform: translateY(-8px) !important;
+    scale: 1.018 !important;
+
+    box-shadow:
+      0 22px 48px rgba(15, 23, 42, 0.12) !important;
+
+    border-color:
+      rgba(37, 99, 235, 0.18) !important;
+  }
+
+  .pricing-section .pricing-card:hover .price,
+  .pricing-section .plan-card:hover .price,
+  .pricing-grid .pricing-card:hover .price,
+  .pricing-grid .plan-card:hover .price,
+  .plans-grid .pricing-card:hover .price,
+  .plans-grid .plan-card:hover .price,
+  .pricing-section .pricing-card:hover .plan-price,
+  .pricing-section .plan-card:hover .plan-price,
+  .pricing-grid .pricing-card:hover .plan-price,
+  .pricing-grid .plan-card:hover .plan-price,
+  .plans-grid .pricing-card:hover .plan-price,
+  .plans-grid .plan-card:hover .plan-price {
+    transform: scale(1.03) !important;
+  }
+
+  .pricing-section .price,
+  .pricing-section .plan-price,
+  .pricing-grid .price,
+  .pricing-grid .plan-price,
+  .plans-grid .price,
+  .plans-grid .plan-price {
+    transition:
+      transform 340ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .pricing-section .pricing-card:hover .popular-badge,
+  .pricing-section .plan-card:hover .popular-badge,
+  .pricing-grid .pricing-card:hover .popular-badge,
+  .pricing-grid .plan-card:hover .popular-badge,
+  .plans-grid .pricing-card:hover .popular-badge,
+  .plans-grid .plan-card:hover .popular-badge {
+    transform: scale(1.05) !important;
+  }
+
+  .pricing-section .popular-badge,
+  .pricing-grid .popular-badge,
+  .plans-grid .popular-badge {
+    transition:
+      transform 300ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 300ms ease !important;
+  }
+
+
+  /* ---------------------------
+     SAFETY TIPS
+  --------------------------- */
+
+  .safety-section .safety-card,
+  .safety-section .tip-card,
+  .safety-grid .safety-card,
+  .safety-grid .tip-card,
+  .tips-grid .safety-card,
+  .tips-grid .tip-card,
+  .safety-section .card,
+  .safety-grid .card,
+  .tips-grid .card {
+    transition:
+      transform 340ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 340ms cubic-bezier(0.16, 1, 0.3, 1),
+      border-color 340ms ease,
+      scale 340ms cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .safety-section .safety-card:hover,
+  .safety-section .tip-card:hover,
+  .safety-grid .safety-card:hover,
+  .safety-grid .tip-card:hover,
+  .tips-grid .safety-card:hover,
+  .tips-grid .tip-card:hover,
+  .safety-section .card:hover,
+  .safety-grid .card:hover,
+  .tips-grid .card:hover {
+    transform: translateY(-6px) !important;
+    scale: 1.015 !important;
+
+    box-shadow:
+      0 18px 40px rgba(15, 23, 42, 0.10) !important;
+
+    border-color:
+      rgba(239, 68, 68, 0.12) !important;
+  }
+
+  .safety-section .safety-card:hover .tip-icon,
+  .safety-section .tip-card:hover .tip-icon,
+  .safety-grid .safety-card:hover .tip-icon,
+  .safety-grid .tip-card:hover .tip-icon,
+  .tips-grid .safety-card:hover .tip-icon,
+  .tips-grid .tip-card:hover .tip-icon,
+  .safety-section .safety-card:hover .safety-icon,
+  .safety-section .tip-card:hover .safety-icon,
+  .safety-grid .safety-card:hover .safety-icon,
+  .safety-grid .tip-card:hover .safety-icon,
+  .tips-grid .safety-card:hover .safety-icon,
+  .tips-grid .tip-card:hover .safety-icon {
+    transform: scale(1.08) !important;
+
+    box-shadow:
+      0 10px 22px rgba(239, 68, 68, 0.14) !important;
+  }
+
+  .tip-icon,
+  .safety-icon {
+    transition:
+      transform 320ms cubic-bezier(0.16, 1, 0.3, 1),
+      box-shadow 320ms ease !important;
+  }
+}
+
+
+/* Touch devices */
+@media (hover: none) {
+  .pricing-section .pricing-card,
+  .pricing-section .plan-card,
+  .pricing-grid .pricing-card,
+  .pricing-grid .plan-card,
+  .plans-grid .pricing-card,
+  .plans-grid .plan-card,
+  .safety-section .safety-card,
+  .safety-section .tip-card,
+  .safety-grid .safety-card,
+  .safety-grid .tip-card,
+  .tips-grid .safety-card,
+  .tips-grid .tip-card {
+    transform: none !important;
+    scale: 1 !important;
+  }
+}
+
+/* JORURICODE_PRICING_SAFETY_HOVER_FIX_END */
+
+
+/* JORURICODE_CLOSING_REGISTER_START */
+
+/* =========================================
+   DON'T WAIT — REGISTER CTA
+========================================= */
+
+.closing-copy {
+  text-align: center;
+}
+
+.closing-register-cta {
+  min-width: 184px;
+  min-height: 54px;
+
+  margin-top: 25px;
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  border:
+    1px solid rgba(37, 99, 235, 0.10);
+
+  border-radius: 11px;
+
+  color: #ffffff;
+
+  background:
+    #2563eb;
+
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+
+  box-shadow:
+    0 12px 26px
+    rgba(37, 99, 235, 0.18);
+
+  transition:
+    transform 320ms
+      cubic-bezier(0.16, 1, 0.3, 1),
+    scale 320ms
+      cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 320ms ease,
+    background-color 320ms ease;
+}
+
+.closing-register-arrow {
+  display: inline-block;
+
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1;
+
+  transition:
+    transform 320ms
+      cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* Desktop hover */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .closing-register-cta:hover {
+    color: #ffffff;
+
+    background:
+      #1d4ed8;
+
+    transform:
+      translateY(-3px);
+
+    scale: 1.025;
+
+    box-shadow:
+      0 18px 36px
+      rgba(37, 99, 235, 0.24);
+  }
+
+  .closing-register-cta:hover
+  .closing-register-arrow {
+    transform:
+      translateX(4px);
+  }
+
+  .closing-register-cta:active {
+    transform:
+      translateY(0);
+
+    scale: 0.985;
+  }
+}
+
+
+/* Bangla */
+
+html[lang="bn"]
+.closing-register-cta {
+  font-family:
+    "Noto Sans Bengali",
+    "Nirmala UI",
+    sans-serif;
+}
+
+
+/* Mobile */
+
+@media (max-width: 640px) {
+
+  .closing-register-cta {
+    min-width: 176px;
+    min-height: 51px;
+
+    margin-top: 20px;
+
+    padding:
+      0 20px;
+
+    font-size: 14px;
+  }
+}
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .closing-register-cta,
+  .closing-register-arrow {
+    transition:
+      none !important;
+  }
+}
+
+/* JORURICODE_CLOSING_REGISTER_END */
+
+
+/* JORURICODE_FOOTER_CLEANUP_START */
+
+.site-footer .footer-grid > div:last-child p {
+  margin-bottom: 0 !important;
+}
+
+/* JORURICODE_FOOTER_CLEANUP_END */
+
+
+/* JORURICODE_REVIEWS_CAROUSEL_START */
+
+/* =====================================================
+   BOOM HOME STYLE REVIEW CAROUSEL
+===================================================== */
+
+.reviews-carousel-section {
+  overflow: hidden;
+}
+
+.reviews-carousel-section .section-heading {
+  margin-bottom: 0 !important;
+}
+
+
+/* =====================================================
+   CAROUSEL
+===================================================== */
+
+.reviews-carousel {
+  width: 100%;
+
+  margin-top: 48px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* =====================================================
+   STAGE
+===================================================== */
+
+.reviews-carousel-stage {
+  width:
+    min(1160px, calc(100% - 100px));
+
+  height: 390px;
+
+  position: relative;
+
+  margin: 0 auto;
+
+  perspective: 1400px;
+}
+
+
+/* =====================================================
+   CARD BASE
+===================================================== */
+
+.carousel-review-card {
+  width: 350px;
+  min-height: 300px;
+
+  position: absolute !important;
+
+  top: 50% !important;
+  left: 50% !important;
+
+  margin: 0 !important;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  cursor: pointer;
+
+  transform-origin:
+    center center;
+
+  will-change:
+    transform,
+    opacity;
+
+  transition:
+    transform 760ms
+      cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 560ms ease,
+    filter 650ms ease,
+    box-shadow 650ms ease,
+    border-color 650ms ease !important;
+}
+
+
+/* =====================================================
+   CENTER ACTIVE
+===================================================== */
+
+.carousel-review-card.review-position-0 {
+  z-index: 10;
+
+  opacity: 1;
+
+  pointer-events: auto;
+
+  transform:
+    translate(-50%, -50%)
+    translateX(0)
+    scale(1.08) !important;
+
+  filter: none;
+
+  border-color:
+    rgba(37, 99, 235, 0.16) !important;
+
+  box-shadow:
+    0 28px 64px
+    rgba(15, 23, 42, 0.14) !important;
+}
+
+
+/* =====================================================
+   MEDIUM LEFT / RIGHT
+===================================================== */
+
+.carousel-review-card.review-position--1 {
+  z-index: 7;
+
+  opacity: 0.91;
+
+  pointer-events: auto;
+
+  transform:
+    translate(-50%, -50%)
+    translateX(-300px)
+    scale(0.90) !important;
+
+  filter:
+    saturate(0.92);
+}
+
+
+.carousel-review-card.review-position-1 {
+  z-index: 7;
+
+  opacity: 0.91;
+
+  pointer-events: auto;
+
+  transform:
+    translate(-50%, -50%)
+    translateX(300px)
+    scale(0.90) !important;
+
+  filter:
+    saturate(0.92);
+}
+
+
+/* =====================================================
+   SMALL OUTER LEFT / RIGHT
+===================================================== */
+
+.carousel-review-card.review-position--2 {
+  z-index: 4;
+
+  opacity: 0.54;
+
+  pointer-events: auto;
+
+  transform:
+    translate(-50%, -50%)
+    translateX(-520px)
+    scale(0.70) !important;
+
+  filter:
+    saturate(0.76);
+}
+
+
+.carousel-review-card.review-position-2 {
+  z-index: 4;
+
+  opacity: 0.54;
+
+  pointer-events: auto;
+
+  transform:
+    translate(-50%, -50%)
+    translateX(520px)
+    scale(0.70) !important;
+
+  filter:
+    saturate(0.76);
+}
+
+
+/* Active avatar */
+
+.is-active-review .review-avatar {
+  transform:
+    scale(1.06);
+
+  box-shadow:
+    0 13px 28px
+    rgba(37, 99, 235, 0.23);
+}
+
+
+/* =====================================================
+   ARROWS
+===================================================== */
+
+.reviews-carousel-arrow {
+  width: 46px;
+  height: 46px;
+
+  position: absolute;
+
+  top: 50%;
+
+  z-index: 30;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0;
+
+  border:
+    1px solid
+    rgba(15, 23, 42, 0.10);
+
+  border-radius: 50%;
+
+  color: #0f172a;
+
+  background: #ffffff;
+
+  font-family:
+    Arial,
+    sans-serif;
+
+  font-size: 31px;
+  font-weight: 300;
+  line-height: 1;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 10px 28px
+    rgba(15, 23, 42, 0.10);
+
+  transform:
+    translateY(-50%);
+
+  transition:
+    transform 300ms
+      cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 300ms ease,
+    background-color 300ms ease;
+}
+
+
+.reviews-carousel-arrow-left {
+  left: 0;
+}
+
+
+.reviews-carousel-arrow-right {
+  right: 0;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+  .reviews-carousel-arrow:hover {
+    background:
+      #f8fafc;
+
+    transform:
+      translateY(-50%)
+      scale(1.08);
+
+    box-shadow:
+      0 16px 34px
+      rgba(15, 23, 42, 0.15);
+  }
+
+}
+
+
+/* =====================================================
+   DOT NAVIGATION
+===================================================== */
+
+.reviews-carousel-dots {
+  min-height: 20px;
+
+  margin-top: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+}
+
+
+.review-dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius: 999px;
+
+  background:
+    #aab3bd;
+
+  cursor: pointer;
+
+  transition:
+    width 350ms
+      cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 300ms ease,
+    transform 300ms ease;
+}
+
+
+.review-dot.is-active {
+  width: 34px;
+
+  background:
+    #2563eb;
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+
+  .review-dot:hover {
+    transform:
+      scale(1.15);
+  }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .reviews-carousel-stage {
+    width:
+      min(850px, calc(100% - 86px));
+
+    height: 375px;
+  }
+
+  .carousel-review-card {
+    width: 325px;
+  }
+
+  .carousel-review-card.review-position--1 {
+    transform:
+      translate(-50%, -50%)
+      translateX(-240px)
+      scale(0.87) !important;
+  }
+
+  .carousel-review-card.review-position-1 {
+    transform:
+      translate(-50%, -50%)
+      translateX(240px)
+      scale(0.87) !important;
+  }
+
+  .carousel-review-card.review-position--2 {
+    opacity: 0.32;
+
+    transform:
+      translate(-50%, -50%)
+      translateX(-405px)
+      scale(0.66) !important;
+  }
+
+  .carousel-review-card.review-position-2 {
+    opacity: 0.32;
+
+    transform:
+      translate(-50%, -50%)
+      translateX(405px)
+      scale(0.66) !important;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 640px) {
+
+  .reviews-carousel {
+    margin-top: 32px;
+  }
+
+  .reviews-carousel-stage {
+    width:
+      calc(100% - 48px);
+
+    height: 360px;
+  }
+
+  .carousel-review-card {
+    width:
+      min(
+        310px,
+        calc(100vw - 76px)
+      );
+
+    min-height:
+      296px;
+  }
+
+  .carousel-review-card.review-position-0 {
+    transform:
+      translate(-50%, -50%)
+      scale(1) !important;
+  }
+
+  .carousel-review-card.review-position--1 {
+    opacity: 0.18;
+
+    transform:
+      translate(-50%, -50%)
+      translateX(-225px)
+      scale(0.82) !important;
+  }
+
+  .carousel-review-card.review-position-1 {
+    opacity: 0.18;
+
+    transform:
+      translate(-50%, -50%)
+      translateX(225px)
+      scale(0.82) !important;
+  }
+
+  .carousel-review-card.review-position--2,
+  .carousel-review-card.review-position-2 {
+    opacity: 0;
+
+    pointer-events: none;
+  }
+
+  .reviews-carousel-arrow {
+    width: 40px;
+    height: 40px;
+
+    font-size: 27px;
+  }
+
+  .reviews-carousel-arrow-left {
+    left: -2px;
+  }
+
+  .reviews-carousel-arrow-right {
+    right: -2px;
+  }
+
+}
+
+
+/* =====================================================
+   REDUCED MOTION
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .carousel-review-card,
+  .reviews-carousel-arrow,
+  .review-dot {
+    transition:
+      none !important;
+  }
+
+}
+
+/* JORURICODE_REVIEWS_CAROUSEL_END */
